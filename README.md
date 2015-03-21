@@ -15,26 +15,26 @@ This assignment uses data from accelerometers from the Samsung Galaxy S smart ph
 1. Downloaded the data using download.file function and unzipped it using unzip function
 
 2. Loaded Features (features.txt) and Activity Label (activity_labels.txt) datasets in R using read.table function
-* 'features.txt': List of names of all measurement variables
-* 'activity_labels.txt': Links the class labels with volunteer's activity name
+a) 'features.txt': List of names of all measurement variables
+b) 'activity_labels.txt': Links the class labels with volunteer's activity name
 
 3. Read below mentioned files from each of train and test folders
-* 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. (70% of Volunteers) 
-* 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. (30% of Volunteers) 
-* 'train/X_train.txt': Training set (a 561-feature vector with time and frequency domain variables)
-* 'train/y_train.txt': Training activity labels
-* 'test/X_test.txt': Test set (a 561-feature vector with time and frequency domain variables)
-* 'test/y_test.txt': Test activity labels
+a) 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. (70% of Volunteers) 
+b) 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. (30% of Volunteers) 
+c) 'train/X_train.txt': Training set (a 561-feature vector with time and frequency domain variables)
+d) 'train/y_train.txt': Training activity labels
+e) 'test/X_test.txt': Test set (a 561-feature vector with time and frequency domain variables)
+f) 'test/y_test.txt': Test activity labels
 
 4. Created consolidated Train Dataset using cbind function on datasets created from below mentioned files
-* 'train/subject_train.txt'
-* 'train/y_train.txt'
-* 'train/X_train.txt'
+a) 'train/subject_train.txt'
+b) 'train/y_train.txt'
+c) 'train/X_train.txt'
 
 5. Created consolidated Test Dataset using cbind function on datasets created from below mentioned files
-* 'test/subject_test.txt'
-* 'test/y_test.txt'
-* 'test/X_test.txt'
+a) 'test/subject_test.txt'
+b) 'test/y_test.txt'
+c) 'test/X_test.txt'
 
 6. Combined the above two consolidated Train and Test datasets using rbind function
 
