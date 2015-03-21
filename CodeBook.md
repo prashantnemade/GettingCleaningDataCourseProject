@@ -1,10 +1,10 @@
 ## Getting and Cleaning Data - Course Project - CodeBook
 1. Subject
-   Datatype: Character
-   Description: Volunteers who performed the activity. Ranges From 1 to 30
+   *	Datatype: Character
+   *	Description: Volunteers who performed the activity. Ranges From 1 to 30
 2. Activity_Label
-   Datatype: Character
-   Description: volunteer's activity name (WALKING,WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING)
+   *	Datatype: Character
+   *	Description: volunteer's activity name (WALKING,WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING)
 3. Details of variables from 3 to 88 are mentioned below,
    All variables (averaged across combination of subject and activity label) are numeric variables and standardized to range [-1,1]
    
