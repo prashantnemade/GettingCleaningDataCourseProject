@@ -15,26 +15,26 @@ This assignment uses data from accelerometers from the Samsung Galaxy S smart ph
 1. Downloaded the data using download.file function and unzipped it using unzip function
 
 2. Loaded Features (features.txt) and Activity Label (activity_labels.txt) datasets in R using read.table function
-a) 'features.txt': List of names of all measurement variables
-b) 'activity_labels.txt': Links the class labels with volunteer's activity name
+	21. 'features.txt': List of names of all measurement variables
+	22. 'activity_labels.txt': Links the class labels with volunteer's activity name
 
 3. Read below mentioned files from each of train and test folders
-a) 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. (70% of Volunteers) 
-b) 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. (30% of Volunteers) 
-c) 'train/X_train.txt': Training set (a 561-feature vector with time and frequency domain variables)
-d) 'train/y_train.txt': Training activity labels
-e) 'test/X_test.txt': Test set (a 561-feature vector with time and frequency domain variables)
-f) 'test/y_test.txt': Test activity labels
+	31. 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. (70% of Volunteers) 
+	32. 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. (30% of Volunteers) 
+	33. 'train/X_train.txt': Training set (a 561-feature vector with time and frequency domain variables)
+	34. 'train/y_train.txt': Training activity labels
+	35. 'test/X_test.txt': Test set (a 561-feature vector with time and frequency domain variables)
+	36. 'test/y_test.txt': Test activity labels
 
 4. Created consolidated Train Dataset using cbind function on datasets created from below mentioned files
-a) 'train/subject_train.txt'
-b) 'train/y_train.txt'
-c) 'train/X_train.txt'
+	41. 'train/subject_train.txt'
+	42. 'train/y_train.txt'
+	43. 'train/X_train.txt'
 
 5. Created consolidated Test Dataset using cbind function on datasets created from below mentioned files
-a) 'test/subject_test.txt'
-b) 'test/y_test.txt'
-c) 'test/X_test.txt'
+	51. 'test/subject_test.txt'
+	52. 'test/y_test.txt'
+	53. 'test/X_test.txt'
 
 6. Combined the above two consolidated Train and Test datasets using rbind function
 
@@ -52,7 +52,7 @@ This completes the extraction of only the measurements on the mean and standard 
 
 #### Labeling the data set with descriptive variable names:
 1. Used dataset created using features.txt to allocate column names to a dataset of x_train.txt and x_test.txt
-* Note: This step was done while loading x_train.txt and x_test.txt in R 
+	*	Note: This step was done while loading x_train.txt and x_test.txt in R 
 
 #### Creating a second, independent tidy data set with the average of each variable for each activity and each subject:
 1. Used melt function to restructure dataset in such a way that all measurement variables and their values will be listed in a two seperate columns across each combination of subject and activity label
